@@ -1,0 +1,46 @@
+//@include green-grad
+
+// GRADIENTS
+
+@mixin green-grad {
+  @include background-image(linear-gradient(#a2c93a, #a2c93a 55%, #1b5b0e));
+}
+
+@mixin dark-green-grad {
+  @include background-image(linear-gradient(#51641d, #475c1b 45%, #374d18 55%, #183112));
+}
+
+@mixin grey-grad {
+  @include background-image(linear-gradient(#cecece, #cecece 55%, #5d5d5d));
+}
+
+/*
+nav.top-bar {
+  @include green-grad;
+}
+*/
+
+h1, .h1 {
+  font-size: em-calc(36);
+}
+
+h2, .h2 {
+  font-size: em-calc(30);
+}
+
+h3, .h3 {
+  font-size: em-calc(26);
+}
+
+
+.panel h3 {
+  font-family: 'Trade Gothic Pro Condensed #18';
+  font-size: em-calc(26);
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button.green-button, .button.green-button {
+  @include green-grad;
+}

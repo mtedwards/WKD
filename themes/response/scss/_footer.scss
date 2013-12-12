@@ -1,0 +1,17 @@
+.main-footer {
+  
+}
+
+.small-footer {
+  p {
+    font-size: 0.7em;
+  }
+  a {
+    text-decoration: underline;
+    color: white;
+    &:hover {
+      color: #ccc;
+      text-decoration: none;
+    }
+  }
+}

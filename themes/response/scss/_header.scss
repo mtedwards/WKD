@@ -1,0 +1,47 @@
+header.header-main {
+  background: url(../img/header-background.jpg) no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 25%;
+  position: relative;
+}
+
+.top-bar {
+  @include green-grad;
+  .top-bar-section {
+     ul {
+       background: transparent;
+       width: 100%;
+      }
+  
+      .divider {
+        border-right:none;
+        border-left:none;
+      }
+
+      li.menu-item {
+        width: 15%;
+      }
+
+      li a:not(.button) {
+        background: transparent;
+        font-size: 26px;
+        font-family: $header-font-family;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+        border-left:2px solid rgba(#000,0);
+        border-right:2px solid rgba(#000,0);
+        &:hover {
+          @include dark-green-grad;
+          border-left:2px solid rgba(#000,0.1);
+          border-right:2px solid rgba(#000,0.1);
+        }
+      }
+      
+      li.active {
+        @include dark-green-grad;
+      }
+
+  }
+}
